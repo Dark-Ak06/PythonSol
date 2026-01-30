@@ -34,5 +34,18 @@ def number(bus_stops):
         result+=on
         result-=off
     return result
+
+    Write a function findNeedle() that takes an array full of junk but containing one "needle"
+    def find_needle(haystack):
+    count=-1
+    for el in haystack:
+        count+=1
+        if el=="needle":
+            return f"found the needle at position {count}" 
+            
+Начала и конец слово должны быть равны
+def feast(beast, dish):
+    return beast[0] == dish[0] and beast[-1] == dish[-1]
+
         
         
