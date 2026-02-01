@@ -47,5 +47,23 @@ def number(bus_stops):
 def feast(beast, dish):
     return beast[0] == dish[0] and beast[-1] == dish[-1]
 
+
+Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
+
+Examples
+"This is an example!" ==> "sihT si na !elpmaxe"
+"double  spaces"      ==> "elbuod  secaps"
+
+def reverse_words(text):
+    words=text.split(" ")
+    sentence=[]
+    for i in words:
+        reverse=i[::-1]
+        sentence.append(reverse)
+        
+    return " ".join(sentence)
+    
+
+
         
         
