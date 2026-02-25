@@ -62,8 +62,41 @@ def reverse_words(text):
         sentence.append(reverse)
         
     return " ".join(sentence)
-    
 
+Create a function which answers the question "Are you playing banjo?".
+If your name starts with the letter "R" or lower case "r", you are playing banjo!
+
+The function takes a name as its only argument, and returns one of the following strings:
+
+name + " plays banjo" 
+name + " does not play banjo"
+
+def are_you_playing_banjo(name):
+    return name + " plays banjo" if name[0]=="R" or name[0]=="r" else name + " does not play banjo"
+
+Return the number (count) of vowels in the given string.
+We will consider a, e, i, o, u as vowels for this Kata (but not y).
+The input string will only consist of lower case letters and/or spaces.
+    
+def get_count(sentence):
+    count=0
+    vowel="aeiou"
+    for char in sentence:
+        if char in vowel:
+            count+=1
+    return count
+
+You get an array of numbers, return the sum of all of the positives ones.
+
+Example
+[1, -4, 7, 12] => 1+7+12=20
+1+7+12=20
+Note
+If there is nothing to sum, the sum is default to 0.
+
+def positive_sum(arr):
+    return sum(number for number in arr if number>0)
+     
 
         
         
