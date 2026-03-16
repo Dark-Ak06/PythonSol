@@ -97,6 +97,16 @@ If there is nothing to sum, the sum is default to 0.
 def positive_sum(arr):
     return sum(number for number in arr if number>0)
      
+"camelCasing"  =>  "camel Casing"
+"identifier"   =>  "identifier"
+""             =>  ""
 
+def solution(s):
+    text=""
+    for char in s:
+        if char.isupper():
+            text+= " "
+        text+=char  
+    return text
         
         
